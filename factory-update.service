@@ -1,0 +1,12 @@
+[Unit]
+Description=Factory Update Service
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/miner/factory-update.sh
+User=root
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
