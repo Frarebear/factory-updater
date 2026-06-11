@@ -1,0 +1,10 @@
+[Unit]
+Description=Factory self-updater (pull latest, build, health-check, rollback)
+After=docker.service network-online.target
+Wants=network-online.target
+Requires=docker.service
+
+[Service]
+Type=oneshot
+ExecStart=/home/miner/factory-update.sh
+# The script logs its own outcomes to /home/miner/factory-update.log
