@@ -1,0 +1,11 @@
+[Unit]
+Description=Factory update timer
+Requires=factory-update.service
+
+[Timer]
+OnUnitActiveSec=2min
+Persistent=true
+AccuracySec=1s
+
+[Install]
+WantedBy=timers.target
