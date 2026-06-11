@@ -6,5 +6,8 @@ Requires=docker.service
 
 [Service]
 Type=oneshot
+User=miner
+Group=miner
+SupplementaryGroups=docker
 ExecStart=/home/miner/factory-update.sh
 # The script logs its own outcomes to /home/miner/factory-update.log
