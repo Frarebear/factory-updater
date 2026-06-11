@@ -1,0 +1,13 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Common build outputs (project-specific stuff should add its own)
+dist/
+build/
+node_modules/
+*.log

@@ -1,0 +1,8 @@
+# burrow.toml — per-project sandbox config.
+
+# Pi-ai routes through OpenRouter via its native 'openrouter' provider, but
+# burrow's piRuntime doesn't include OPENROUTER_API_KEY in its default env
+# passthrough. Opt in here so agents inside the sandbox can authenticate.
+
+[env]
+optional = ["OPENROUTER_API_KEY"]
